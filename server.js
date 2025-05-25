@@ -5,7 +5,7 @@ import authRoutes from './routes/authRoutes.js';
 import morgan from 'morgan';
 import adminRoutes from './routes/adminRoutes.js';
 import { notFound, errorHandler } from './middlewares/errorMiddleware.js';
-
+import cors from 'cors'
 dotenv.config();
 connectDB();
 
@@ -14,7 +14,7 @@ if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev')); // logs method, URL, status, response time etc.
 }
 app.use(express.json());
-
+app.use(cors())
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
 app.get('/health', (req, res) => res.status(200).json({ status: 'OK',message:"Status Successful" }));
