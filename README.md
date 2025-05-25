@@ -163,7 +163,7 @@ Authorization: Bearer <admin-token>
 
 ## 🧪 Postman Collection
 
-You can find the full Postman collection in the `postman/` folder or [click here](#) to download.
+You can import OneAtta.postman_collection.json from folder OneAtta Backend/OneAtta.postman_collection.json  
 
 ---
 
@@ -176,3 +176,5 @@ You can find the full Postman collection in the `postman/` folder or [click here
 * **Bcrypt** – Secure password hashing
 * **JSON Web Tokens (JWT)** – User authentication
 * **Cookie-parser** – Parsing and managing HTTP-only cookies
+
+
