@@ -147,7 +147,7 @@ POST /admin/login
 }
 ```
 
-#### 🔹 Get all registered users
+#### 🔹 Get all registered users 
 
 ```http
 GET /admin/users
