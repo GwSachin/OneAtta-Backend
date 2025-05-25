@@ -8,9 +8,9 @@ OneAtta is a secure and scalable backend system built with **Node.js** and **Exp
 
 - ✅ User Registration & Login
 - 🔐 Admin Registration & Login
-- 🧠 Input Validation with Zod
+- 🧠 Input Validation with Joi
 - 🛡️ Password Hashing with bcrypt
-- 🧾 JWT-based Authentication (access token in HTTP-only cookies)
+- 🧾 JWT-based Authentication (access token )
 - 🧑‍💼 Role-based Access Control (`admin`, `user`)
 - 📊 Admin: Get all users
 - ❤️ Health Check API
@@ -172,9 +172,8 @@ You can import OneAtta.postman_collection.json from folder OneAtta Backend/OneAt
 * **Node.js** – Backend runtime environment
 * **Express.js** – Web framework for building APIs
 * **MongoDB & Mongoose** – NoSQL database with schema modeling
-* **Zod** – Input validation for all routes
+* **Joi** – Input validation for all routes
 * **Bcrypt** – Secure password hashing
 * **JSON Web Tokens (JWT)** – User authentication
-* **Cookie-parser** – Parsing and managing HTTP-only cookies
 
 
