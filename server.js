@@ -16,9 +16,9 @@ if (process.env.NODE_ENV === 'development') {
 app.use(express.json());
 app.use(cors())
 app.get('/',(req, res) => res.status(200).json({ status: 'OK',message:"Server Run Successfully" }))
+app.get('/health', (req, res) => res.status(200).json({ status: 'OK',message:"Status Successful" }));
 app.use('/auth', authRoutes);
 app.use('/admin', adminRoutes);
-app.get('/health', (req, res) => res.status(200).json({ status: 'OK',message:"Status Successful" }));
 
 app.use(notFound);
 // error handler
